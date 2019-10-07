@@ -2,6 +2,7 @@
 verilog xil_defaultlib  \
 "../../../../task_1.srcs/sources_1/imports/new/and2.v" \
 "../../../../task_1.srcs/sources_1/imports/new/cla.v" \
+"../../../../task_1.srcs/sources_1/new/cla8.v" \
 "../../../../task_1.srcs/sources_1/imports/new/half_adder.v" \
 "../../../../task_1.srcs/sources_1/new/multiplier.v" \
 "../../../../task_1.srcs/sources_1/new/pp.v" \

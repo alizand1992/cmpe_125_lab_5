@@ -1,4 +1,4 @@
-module cla(input [7:0] a, input [7:0] b, input cin, output wire [7:0] sum, output wire cout);
+module cla(input [3:0] a, input [3:0] b, input cin, output wire [3:0] sum, output wire cout);
     
     wire [4:0] G, P, C;
     
