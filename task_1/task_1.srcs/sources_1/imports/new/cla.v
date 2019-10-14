@@ -2,7 +2,7 @@ module cla(input [3:0] a, input [3:0] b, input cin, output wire [3:0] sum, outpu
     
     wire [4:0] G, P, C;
     
-    half_adder ha (.a(a), .b(b));
+    half_adder ha (.a({a[3:0]}), .b({b[3:0]}));
     assign P = ha.sum;
     assign G = ha.cout;
     
