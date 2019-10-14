@@ -76,3 +76,4 @@ source multipier_tb.tcl
 run 1300 ns
 restart
 run 2600 ns
+close_sim
