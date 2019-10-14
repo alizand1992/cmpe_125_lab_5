@@ -1164,3 +1164,23 @@ INFO: [Common 17-206] Exiting Vivado at Mon Oct 14 16:38:43 2019...
 
 *** Halting run - EA reset detected ***
 
+
+*** Running vivado
+    with args -log multiplier.vdi -applog -m64 -product Vivado -messageDb vivado.pb -mode batch -source multiplier.tcl -notrace
+
+
+****** Vivado v2019.1.2 (64-bit)
+  **** SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
+  **** IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source multiplier.tcl -notrace
+Command: open_checkpoint multiplier_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 292.355 ; gain = 0.000
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.

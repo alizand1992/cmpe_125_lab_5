@@ -18,7 +18,8 @@ module multiplier_fpga(
     );
     
     button_debouncer db1 (.clk(clk_5KHz), .button(clkb), .debounced_button(db_clk));
-    
-    multiplier m (.a(a), .b(b), .clk(db_clk), .rst(rst), .out(out)); 
+    button_debouncer db2 (.clk(clk_5KHz), .button(rst), .debounced_button(db_rs));
+
+    multiplier m (.a(a), .b(b), .clk(db_clk), .rst(db_rs), .out(out)); 
         
 endmodule

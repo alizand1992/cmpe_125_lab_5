@@ -10,3 +10,12 @@
 # Journal file: C:/Users/Ali/Documents/cmpe_125_lab_5/task_1/task_1.runs/impl_1\vivado.jou
 #-----------------------------------------------------------
 source multiplier.tcl -notrace
+Command: open_checkpoint multiplier_routed.dcp
+
+Starting open_checkpoint Task
+
+Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.052 . Memory (MB): peak = 292.355 ; gain = 0.000
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-479] Netlist was created with Vivado 2019.1.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
