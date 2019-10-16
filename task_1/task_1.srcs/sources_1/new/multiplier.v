@@ -16,6 +16,24 @@ module multiplier(input [3:0] a, b, input clk, rst, output reg [7:0] out);
     
     reg [7:0] r_cla1;
     reg [7:0] r_cla2;
+    
+    wire [7:0] w_f1;
+    wire [7:0] w_f2;
+    wire [7:0] w_f3;
+    wire [7:0] w_f4;
+    wire [7:0] w_f5;
+    wire [7:0] w_f6;
+    wire [7:0] w_f7;
+    
+    flop f1(.clk(clk), .rst(rst), .d(w_pp1), .q(w_f1));
+    flop f2(.clk(clk), .rst(rst), .d(w_pp2), .q(w_f2));
+    flop f3(.clk(clk), .rst(rst), .d(w_pp3), .q(w_f3));
+    flop f4(.clk(clk), .rst(rst), .d(w_pp4), .q(w_f4));
+
+    flop f5(.clk(clk), .rst(rst), .d(w_cla1), .q(w_f5));
+    flop f6(.clk(clk), .rst(rst), .d(w_cla2), .q(w_f6));
+
+    flop f7(.clk(clk), .rst(rst), .d(w_cla3), .q(w_f7));
 
     pp pp1(.a(a), .b(b[0]), .shift(2'b00), .out(w_pp1));
     pp pp2(.a(a), .b(b[1]), .shift(2'b01), .out(w_pp2));
@@ -30,15 +48,7 @@ module multiplier(input [3:0] a, b, input clk, rst, output reg [7:0] out);
     begin
         if (!rst)
         begin
-            r_pp1 = w_pp1;
-            r_pp2 = w_pp2;
-            r_pp3 = w_pp3;
-            r_pp4 = w_pp4;
-            
-            r_cla1 = w_cla1;
-            r_cla2 = w_cla2;
-            
-            out = w_cla3;
+            out = w_f7;
         end
         else
         begin

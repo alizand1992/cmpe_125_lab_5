@@ -40,4 +40,4 @@ EAStep()
      fi
 }
 
-EAStep vivado -log multiplier.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiplier.tcl
+EAStep vivado -log multiplier_fpga.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiplier_fpga.tcl

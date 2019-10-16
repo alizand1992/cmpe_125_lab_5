@@ -2,11 +2,11 @@
 # Vivado v2019.1.2 (64-bit)
 # SW Build 2615518 on Fri Aug  9 15:55:25 MDT 2019
 # IP Build 2614745 on Fri Aug  9 20:55:02 MDT 2019
-# Start of session at: Mon Oct 14 16:33:25 2019
-# Process ID: 12268
+# Start of session at: Mon Oct 14 17:09:51 2019
+# Process ID: 1356
 # Current directory: C:/Users/Ali/Documents/cmpe_125_lab_5/task_1/task_1.runs/synth_1
-# Command line: vivado.exe -log multiplier.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiplier.tcl
-# Log file: C:/Users/Ali/Documents/cmpe_125_lab_5/task_1/task_1.runs/synth_1/multiplier.vds
+# Command line: vivado.exe -log multiplier_fpga.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source multiplier_fpga.tcl
+# Log file: C:/Users/Ali/Documents/cmpe_125_lab_5/task_1/task_1.runs/synth_1/multiplier_fpga.vds
 # Journal file: C:/Users/Ali/Documents/cmpe_125_lab_5/task_1/task_1.runs/synth_1\vivado.jou
 #-----------------------------------------------------------
-source multiplier.tcl -notrace
+source multiplier_fpga.tcl -notrace
